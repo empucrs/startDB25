@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+h1 {
+  font-family: "MinhaFonte", sans-serif;
+}

@@ -1,0 +1,13 @@
+a:hover {
+  color: orange;
+  background-color: greenyellow;
+}
+
+p:first-child {
+  background-color: #eeeeee;
+}
+
+p::before {
+  content: "→ ";
+  color: gray;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Inline, Interno e Externo</title>
+
+        <!-- CSS INTERNO prioridade mínima (2) na definição de estilos -->
+        <style>
+            h1 {
+                color: #808080;
+                font-family: 'Segoe UI';
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                color: pink;
+            }
+        </style>
+
+        <!-- CSS EXTERNO prioridade média (1) na definição de estilos -->
+        <link rel="stylesheet" href="css1/style.css" type="text/css">
+
+    </head>
+
+    <body>
+
+        <!-- CSS INLINE prioridade máxima (0) na definição de estilos-->
+
+        <p style="color: red;">Este parágrafo usa CSS inline (aplicado diretamente no elemento).</p>
+
+        <p> qual seria o estilo aplicado aqui? </p>
+
+        <h1>Título estilizado por CSS interno</h1>
+        <p>Este parágrafo será estilizado pelo arquivo externo.</p>
+    </body>
+
+</html>

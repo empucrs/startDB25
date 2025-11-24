@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.item {
+  background: #dddddd;
+  padding: 20px;
+  flex: 1;
+}

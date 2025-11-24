@@ -1,0 +1,11 @@
+a.flutuante {
+  float: right;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  background-color: azure;
+}
+
+.limpa {
+  clear: both;
+}
