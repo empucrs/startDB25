@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página com vários scripts</title>
+    
+    <script>
+        function saudacao(nome) {
+            return `Olá, ${nome || 'visitante'}!`;
+        }
+        function mudarCorFundo() {
+            const bColor = document.body.style.backgroundColor;
+            document.body.style.backgroundColor =
+                bColor === 'lightcoral' ? '#f0f0f0' : 'lightcoral';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Teste de múltiplos &lt;script&gt;</h1>
+    <script>
+        document.querySelector('h1').textContent = saudacao('Edson');
+    </script>
+    <p id="mensagem"></p>
+    <button onclick="mudarCorFundo()">Trocar cor de fundo</button>
+    
+    <script>
+        document.getElementById('mensagem').textContent =
+            'Esta frase foi inserida por um segundo <script> no BODY';
+    </script>
+    
+</body>
+
+</html>
