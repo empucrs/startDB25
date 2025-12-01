@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { sculptureList } from '../Sculpture/data';
+import { sculptureList } from './data';
 
 export default function Sculpture() {
   const [index, setIndex] = useState<number>(0);
